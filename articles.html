@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>כתבות</title>
+    <style>
+      :root {
+        --bg: #e6f3ff;
+        --topbar: #0b86d7;
+        --text: #0f172a;
+        --link: #ffffff;
+      }
+
+      html,
+      body {
+        height: 100%;
+      }
+
+      body {
+        margin: 0;
+        background: var(--bg);
+        font-family: Arial, Helvetica, sans-serif;
+        color: var(--text);
+      }
+
+      .phone {
+        max-width: 430px;
+        margin: 0 auto;
+        background: var(--bg);
+      }
+
+      .topbar {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        background: var(--topbar);
+        padding: 10px 12px;
+      }
+
+      .menu {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+      }
+
+      .menu__link {
+        color: var(--link);
+        text-decoration: none;
+        font-weight: 700;
+        padding: 6px 10px;
+        border-radius: 10px;
+      }
+
+      .menu__link:hover {
+        background: rgba(255, 255, 255, 0.15);
+      }
+
+      .menu__link[aria-current="page"] {
+        background: rgba(255, 255, 255, 0.25);
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="phone">
+      <header class="topbar" aria-label="תפריט עליון">
+        <nav class="menu" aria-label="ניווט">
+          <a class="menu__link" href="index.html">שער</a>
+          <a class="menu__link" href="articles.html" aria-current="page">כתבות</a>
+          <a class="menu__link" href="contact.html">צור קשר</a>
+        </nav>
+      </header>
+
+      <main aria-label="כתבות">
+        <img
+          src="file:///Users/yotamhayoun/.cursor/projects/Users-yotamhayoun-Desktop-Cursor/assets/_______-3dcd44f3-bddc-4a2f-8773-170ac77b0c44.png"
+          alt="מסך 3 - מפה וקטלוג"
+        />
+      </main>
+    </div>
+  </body>
+</html>
+
